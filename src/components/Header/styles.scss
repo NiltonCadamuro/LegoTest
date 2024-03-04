@@ -1,0 +1,146 @@
+@import "../../sass/variables.scss";
+@import "../../sass/mixin.scss";
+
+.header-scroll {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(255, 255, 255);
+  transition: 0.3s;
+  backdrop-filter: blur(4px);
+
+  @media screen and (min-width: 1024px) {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    min-height: 80px;
+    max-width: 1526px;
+    margin: 0 auto;
+
+    .col-left {
+      display: flex;
+      gap: 24px;
+
+      @media screen and (min-width: 1024px) {
+        width: -webkit-fill-available;
+        max-width: 192px;
+      }
+
+      .menu-categories-btn {
+        max-width: 80px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+
+        p {
+          @include font-400(13px, $text-primary, 13px, 5%);
+          margin: 6px 0 0 0;
+        }
+
+        .hover-black,
+        p {
+          transition: all 0.3s;
+        }
+
+        &:hover {
+          p {
+            color: $text-tertiary;
+          }
+
+          .hover-black {
+            stroke: #000;
+          }
+        }
+      }
+    }
+
+    .nav-bar {
+      display: none;
+
+      @media screen and (min-width: 1024px) {
+        display: block;
+        flex: 1;
+        width: 100%;
+      }
+
+      ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        min-width: 630px;
+        flex-wrap: wrap;
+
+        li {
+          padding: 0 16px;
+          display: flex;
+          align-items: center;
+
+          a {
+            @include font-400(16px, $text-primary, 28px, 1%);
+            text-decoration: none;
+            transition: color 0.3s;
+            text-align: center;
+            cursor: pointer;
+
+            &:hover {
+              color: $text-tertiary;
+            }
+          }
+        }
+      }
+    }
+
+    .col-right {
+      display: flex;
+
+      @media screen and (min-width: 1024px) {
+        gap: 8px;
+      }
+
+      .container-btn {
+        display: flex;
+        flex-direction: row-reverse;
+
+        @media screen and (min-width: 1024px) {
+          gap: 8px;
+          flex-direction: row;
+        }
+      }
+
+      .contact-us {
+        display: none !important;
+
+        @media screen and (min-width: 1024px) {
+          display: flex !important;
+        }
+      }
+
+      .btn-header {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 72px;
+        cursor: pointer;
+
+        .label-btn {
+          @include font-400(13px, $text-primary, 13px, 5%);
+          margin: 8px 0 0 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+@import "./variables.scss";
+
+// Mixins for font styles
+
+@mixin font-400(
+  $size,
+  $color: $text-primary,
+  $line-height: 15px,
+  $letter-spacing: 5%
+) {
+  font-size: $size;
+  line-height: $line-height;
+  color: $color;
+  letter-spacing: $letter-spacing;
+  font-weight: 400;
+}
+
+@mixin font-300(
+  $size,
+  $color: $text-primary,
+  $line-height: 15px,
+  $letter-spacing: 5%
+) {
+  font-size: $size;
+  line-height: $line-height;
+  color: $color;
+  letter-spacing: $letter-spacing;
+  font-family: "Cera Pro Light", sans-serif;
+  font-weight: 300;
+}
+
+@mixin font-100(
+  $size,
+  $color: $text-primary,
+  $line-height: 15px,
+  $letter-spacing: 5%
+) {
+  font-size: $size;
+  line-height: $line-height;
+  color: $color;
+  letter-spacing: $letter-spacing;
+  font-family: "Cera Pro Thin", sans-serif;
+  font-weight: 100;
+}
+
+@mixin font-700(
+  $size,
+  $color: $text-primary,
+  $line-height: 15px,
+  $letter-spacing: 5%
+) {
+  font-size: $size;
+  line-height: $line-height;
+  color: $color;
+  letter-spacing: $letter-spacing;
+  font-family: "Cera Pro Bold", sans-serif;
+  font-weight: 700;
+}
+
+@mixin font-500(
+  $size,
+  $color: $text-primary,
+  $line-height: 15px,
+  $letter-spacing: 5%
+) {
+  font-size: $size;
+  line-height: $line-height;
+  color: $color;
+  letter-spacing: $letter-spacing;
+  font-family: "Cera Pro Medium", sans-serif;
+  font-weight: 500;
+}

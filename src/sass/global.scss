@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "Cera Pro Thin";
+  src: url("/fonts/cerapro-thin.otf") format("opentype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Cera Pro Light";
+  src: url("/fonts/cerapro-light.otf") format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("/fonts/cerapro-regular.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Cera Pro Medium";
+  src: url("/fonts/cerapro-medium.otf") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Cera Pro Bold";
+  src: url("/fonts/cerapro-bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+#root {
+  width: 100%;
+}
+
+:root {
+  font-family: "Cera Pro", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}

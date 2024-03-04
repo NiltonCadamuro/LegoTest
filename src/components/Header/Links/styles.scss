@@ -1,0 +1,69 @@
+@import "../../../sass/variables.scss";
+
+.contact-us {
+  .contact-icon path {
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    .contact-icon path {
+      transition: all 0.3s;
+      stroke: $text-tertiary;
+    }
+  }
+}
+
+.search {
+  .search-icon path {
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    .search-icon path {
+      stroke: $text-tertiary;
+    }
+  }
+}
+
+.home {
+  .home-icon path {
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    .home-icon path {
+      stroke: $text-tertiary;
+    }
+  }
+}
+
+.request {
+  .request-icon path {
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    .request-icon {
+      path {
+        fill: $text-tertiary;
+      }
+    }
+  }
+}
+
+.contact-us,
+.search,
+.request,
+.home {
+  cursor: pointer;
+
+  .label-btn {
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    .label-btn {
+      color: $text-tertiary !important;
+    }
+  }
+}
